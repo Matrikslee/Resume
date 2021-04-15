@@ -13,50 +13,64 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{李成}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{im.lechain@gmail.com} \textperiodcentered\
+  \phone{(+86) 155 7470 7978 } \textperiodcentered\
+  \linkedin[李成]{https://www.linkedin.com/in/matrikslee}} \textperiodcentered\
  
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{中国海洋大学}, 青岛}{2014/9 -- 2018/6}
+\textit{本科}—工程学院—自动化专业
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\hspace*{\fill}
+\section{\faUsers\ 工作经历/项目经历}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{联发软件设计（深圳）有限公司}}{2019年4月 -- 至今}
+\role{工程师}{TV芯片的HDMI驱动开发和维护}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+2019年开始——Mediatek 8K高端TV芯片的HDMI驱动开发与维护
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item Arm64平台的内存、寄存器和中断模型认知，linux kernel编码经验
+  \item IC验证之后的公版驱动软件开发维护，处理内部公版测试中的驱动软件bug
+  \item 客户项目的客户支持及BUG处理，并取得若干内部Award奖励
+  \item HDMI规范：TMDS/FRL信号传输协议，CEC/I2C通信协议等
+\end{itemize}
+2021年开始——ARM64平台的Linux标准内核模块开发
+\begin{itemize}
+  \item arm64平台标准kernel模块的开发经验，
+  \item 了解dma\_buf, mmap等kernel基础设施的用途及使用场景，并有一定的编码经验
+  \item 内核模块代码在x86(x64)平台下的google test单元测试环境搭建，使用stub/mock方法
 \end{itemize}
 \end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\hspace*{\fill}
+\datedsubsection{\textbf{索尼精密部件（惠州）有限公司}}{2018年12月 -- 2019年3月}
+\role{工程师}{生产线嵌入式设备及上位机软件开发与维护}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+1. 自行开发了用于生产线设备通信控制的上位机程序，用于调试与数据采集
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 基于C\#和Win Form实现用户界面
+  \item 基于事件的串口文本异步接收
+  \item 实现收发文本的编码转换(ASCII，Unicode，UTF-8)
+  \item 日志存储功能
 \end{itemize}
+2. 参与新产线的研发，主要负责数据收集和处理，并根据数据报告针对性调整设备参数
 \end{onehalfspacing}
+
+\hspace*{\fill}
+\datedsubsection{\textbf{中国海洋大学——基于单片机的两轮自平衡小车} }{2015年10月 -- 2017年8月}
+\role{单片机C语言开发}{参赛项目}
+本项目为软硬件综合项目，队友负责硬件PCB设计等，我在团队中负责C代码的编写和维护，构建程序框架，并维护运行两年。
+
+本项目的软件是单片机裸机程序，在单片机厂商提供的基础代码库上开发。
+\begin{itemize}
+  \item 传感器：陀螺仪、加速度计、电磁传感器、摄像头，
+  \item 电机驱动：H桥驱动电路实现电机的正反转和速度控制，
+  \item 控制算法：PID控制算法，对两轮平衡小车的姿态、速度以及方向的控制，
+  \item 图像算法：二值图边界判定算法，寻找赛道边界，做为小车循迹的依据，
+  \item 滤波算法：卡尔曼滤波器和平衡互补滤波器，对传感器采集数据滤波，过滤信号扰动。
+\end{itemize}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -65,24 +79,47 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\hspace*{\fill}
+\section{\faCogs\ 工作技能}
 % increase linespacing [parsep=0.5ex]
+编程语言：
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 精通C语言程序编写，
+  \item 有一定的C++编码经验，
+  \item 能编写简单的bash/makefile脚本，
+  \item 能读写简单的汇编程序(AT\&T语法)，
+  \item 对其他多种编程语言(Java/Python/Rust/Lisp/C\#)有所了解。
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+通信协议：
+\begin{itemize}
+  \item 掌握I2C, RS232等简单的串行通信协议，
+  \item 掌握HDMI规范的编码及通信协议，丰富的HDMI设备问题处理经验。
+\end{itemize}
 
-\section{\faInfo\ 其他}
+开发平台：
+\begin{itemize}        
+  \item 2年单片机裸机C语言程序开发经验，
+  \item 2年的Arm64 Linux平台kernel驱动软件开发经验。
+\end{itemize}
+
+\hspace*{\fill}
+\section{\faHeartO\ 获奖情况}
+\datedline{第十二届全国大学生“恩智浦”杯智能汽车竞赛\quad\textit{全国二等奖，山东省一等奖}}{2017 年}
+\datedline{“浪潮杯”山东省第七届 ACM 大学生程序设计竞赛\quad\textit{银牌}}{2016年}
+\datedline{中国海洋大学第七届“朗讯杯”科技实训比赛\quad\textit{二等奖}}{2016年}
+\datedline{中国海洋大学2015~2016学年\quad\textit{科技创新奖学金}}{2016年}
+\datedline{全国大学生数学建模竞赛\quad\textit{山东赛区二等奖}}{2015年}
+
+\hspace*{\fill}
+\section{\faInfo\ 其他个人情况介绍}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+\item 数据结构和算法基础：高中参与信息奥林匹克竞赛，并获省级一等奖，大学参与大学生ACM竞赛，获省级二等奖
+\item 传感器、信号处理、自动控制及控制理论基础：本科自动化专业课
+\item 对计算机体系结构、操作系统及程序运行原理的理解和认识：完成对《深入理解计算机系统》（CS:APP）的自学，目前在读《程序员的自我修养：链接、装载与库》，《Linux内核完全注释》
+\item 计算机网络基础：读完《TCP/IP详解》第一卷，并在Archlinux上有所实践
+\item 热爱计算机技术，广泛涉猎一些计算机技术，学习能力强，个人PC使用Archlinux操作系统
 \end{itemize}
 
 %% Reference
